@@ -1,0 +1,123 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "EventTrigger",
+      "key": "1897896c-6351-4f59-a857-88be9f3ae18e_Event_start",
+      "id": "EventTrigger1897896c-6351-4f59-a857-88be9f3ae18e_Event_start",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "1897896c-6351-4f59-a857-88be9f3ae18e",
+          "isExpression": false
+        },
+        "EntryPointUniqueId": {
+          "defaultValue": "a344ea27-de5f-4cda-918b-e68e3512d342",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "Connector": "uipath-salesforce-slack",
+        "ActivityName": "Start event",
+        "BindingsVersion": "2.2",
+        "ObjectName": "slack_events_message",
+        "Operation": "SLACK_EVENT_MESSAGE",
+        "FilterExpression": "((contains(event.text,'SPECTRE_TICKET')))"
+      }
+    },
+    {
+      "resource": "Connection",
+      "key": "1897896c-6351-4f59-a857-88be9f3ae18e",
+      "id": "Connection1897896c-6351-4f59-a857-88be9f3ae18e",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "06d59431-ddd7-45ee-b845-a97b113a13c7",
+          "isExpression": false,
+          "displayName": "uipath-salesforce-slack connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Start event",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-salesforce-slack connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-salesforce-slack"
+      }
+    },
+    {
+      "resource": "Connection",
+      "key": "e25ee795-30bd-4638-8655-059f582da958",
+      "id": "Connectione25ee795-30bd-4638-8655-059f582da958",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "a070addb-3cab-4013-894b-8991bbd12a3f",
+          "isExpression": false,
+          "displayName": "uipath-atlassian-jira connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Create Enhancement ticket",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-atlassian-jira connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-atlassian-jira"
+      }
+    },
+    {
+      "resource": "app",
+      "key": "Spectre Escalation Review",
+      "id": "appSpectre Escalation Review",
+      "value": {
+        "name": {
+          "defaultValue": "Spectre Escalation Review",
+          "isExpression": false,
+          "displayName": "App name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Spectre Escalation Review",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "SpectreInvestigationAgent",
+      "id": "processSpectreInvestigationAgent",
+      "value": {
+        "name": {
+          "defaultValue": "SpectreInvestigationAgent",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Bug Investigator Agent",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true",
+        "subType": "Function"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "SpectreCodingAgent",
+      "id": "processSpectreCodingAgent",
+      "value": {
+        "name": {
+          "defaultValue": "SpectreCodingAgent",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Coding Agent",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true",
+        "subType": "Function"
+      }
+    }
+  ]
+}
