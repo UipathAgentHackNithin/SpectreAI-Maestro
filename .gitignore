@@ -1,0 +1,11 @@
+# UiPath local runtime
+.local/
+.tmh/
+userProfile/
+
+# IDE
+.idea/
+.vscode/
+
+# Build artifacts
+*.nupkg

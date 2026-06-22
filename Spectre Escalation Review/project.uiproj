@@ -1,0 +1,10 @@
+{
+  "ProjectType": "WebApp",
+  "WebAppSettings": {
+    "AppId": "IDb62f1c3791c5491997d22530ee670e30",
+    "IsCoreProject": true
+  },
+  "Name": "Spectre Escalation Review",
+  "Description": null,
+  "MainFile": "Main.xaml"
+}

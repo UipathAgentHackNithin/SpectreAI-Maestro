@@ -1,0 +1,17 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "1a9975ad-ad7e-4cff-df94-08decc94c26d",
+  "Projects": [
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "Agentic Process/project.uiproj",
+      "Id": "8a114648-1f72-4631-aa87-e1733aff8607"
+    },
+    {
+      "Type": "WebApp",
+      "ProjectRelativePath": "Spectre Escalation Review/project.uiproj",
+      "Id": "e0b9d1ac-ad63-430e-a5e1-7d32b56e52a8"
+    }
+  ]
+}
